@@ -22,7 +22,7 @@ export class SchemaValidator {
     if (!this.schema) {
       throw new OcppError(ERROR_PROTOCOLERROR, 'Schema for request not found');
     }
-    const ajv = new Ajv();
+    const ajv = new Ajv({strict:false});
     // delete schema.$schema;
     const validate = ajv.compile(this.schema);
     const valid = validate(payload);
