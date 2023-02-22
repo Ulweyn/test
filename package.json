@@ -1,5 +1,5 @@
 {
-  "name": "node-ts-ocpp2",
+  "name": "node-ts-ocpp5",
   "version": "1.4.0",
   "description": "OCPP 2.0.1: Open Charge Point Protocol",
   "main": "dist/src/index.js",
